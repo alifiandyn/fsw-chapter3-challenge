@@ -2,8 +2,9 @@
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Bootstrap CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
@@ -11,10 +12,13 @@
     <!-- Custom CSS by Alif -->
     <link rel="stylesheet" href="dist/css/custom-style.css" />
 
-    <title>Hello, world!</title>
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" />
+
+    <title>Traditional Games</title>
   </head>
   <body>
-    <div class="main-bg img-responsive">
+    <section class="main-bg">
       <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
           <a class="navbar-brand col-2 nav-font-style" href="#">LOGO</a>
@@ -47,13 +51,25 @@
           </div>
         </div>
       </nav>
-      <div class="main-bg-text">
-        <h1>PLAY TRADITIONAL GAME</h1>
-        <h3>Experience new traditional game play</h3>
-        <button class="btn-warning">PLAY NOW</button>
-        <button class="btn-primary">THE STORY</button>
+      <div class="container">
+        <div class="col">
+          <div class="row align-items-center" style="min-height: 50rem">
+            <div class="col text-center">
+              <h1>PLAY TRADITIONAL GAME</h1>
+              <h3>Experience new traditional game play</h3>
+              <button class="play-now-btn btn-warning">PLAY NOW</button>
+            </div>
+          </div>
+          <div class="row align-items-end">
+            <div class="col text-center">
+              THE STORY
+              <br />
+              <i class="fas fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
     <!-- Optional JavaScript; choose one of the two! -->
     <!-- Option 1: Bootstrap Bundle with Popper -->
