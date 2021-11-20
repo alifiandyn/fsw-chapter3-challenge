@@ -92,7 +92,7 @@ nav {
 
 .link-story-games:hover {
   text-decoration: none;
-  color: yellow;
+  color: #f3af34;
 }
 
 @media only screen and (max-width: 550px) {
@@ -168,7 +168,7 @@ h1 {
 /*End Section 2 Style */
 
 /* Section 3 Style */
-.bg-feature {
+.feature-bg {
   background-image: url("../../assets/features.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -185,7 +185,7 @@ h1 {
   position: relative;
   margin-bottom: 0 !important;
 }
-.garis:before {
+.side-line:before {
   content: " ";
   background: white;
   display: inline-block;
@@ -225,7 +225,7 @@ ul.timeline > li:before {
   z-index: 400;
 }
 
-.head-time-line {
+.timeline-info-head {
   font-family: Arial;
   font-style: normal;
   font-weight: normal;
@@ -236,3 +236,62 @@ ul.timeline > li:before {
 }
 /* End Section 3 Timeline Style */
 /* End Section 3 Style */
+
+/* Section 4 Style */
+.system-requirment-bg {
+  background-image: url("../../assets/requirements.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 960px;
+  position: relative;
+  overflow: hidden;
+  color: white;
+}
+
+.system-requirment-bg h3 {
+  font-family: Arial;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 2px;
+  margin-top: 8.75rem;
+}
+
+.system-requirment-bg h1 {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin: 3.125rem 0 2rem 0;
+}
+
+.requirment-info-head {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 2px;
+  color: #ffb548;
+  text-transform: uppercase;
+}
+
+.requirment-info-text {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.table-custom td {
+  padding: 1.25rem;
+  height: 8.125rem;
+}
+/*End Section 4 Style */
