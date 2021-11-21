@@ -145,7 +145,6 @@ h1 {
   width: 260.36px;
   height: 60px;
   border-radius: 4px;
-  margin: 0 0 3rem 0;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -172,6 +171,17 @@ h1 {
   line-height: 22px;
   color: #ffffff;
 }
+
+.info-muted {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
 /* End Global Custom Configuration */
 
 /* Section 2 Style */
@@ -185,7 +195,7 @@ h1 {
   overflow: hidden;
   color: white;
 }
-/*End Section 2 Style */
+/* End Section 2 Style */
 
 /* Section 3 Style */
 .feature-bg {
@@ -284,7 +294,7 @@ ul.timeline > li:before {
   padding: 1.25rem;
   height: 8.125rem;
 }
-/*End Section 4 Style */
+/* End Section 4 Style */
 
 /* Section 5 style */
 .top-score-bg {
@@ -322,14 +332,69 @@ ul.timeline > li:before {
 .top-score-bg .player-comment {
   line-height: 25px;
 }
+/* End Section 5 style */
 
-.top-score-bg .player-comment-date {
+/* Section 6 Style */
+.subscribe-bg {
+  background-color: #080a0b;
+  min-height: 865px;
+  position: relative;
+}
+
+.subscribe-bg h3 {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.subscribe-bg h1 {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 65px;
+  line-height: 75px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.subscribe-bg .info-text {
+  min-height: 140px;
+}
+
+.input-email-custom {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 5px;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 19px;
-  color: #ffffff;
-  mix-blend-mode: normal;
-  opacity: 0.5;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffb548;
 }
+
+.footer {
+  background-color: #080a0b;
+  min-height: 95px;
+}
+
+.footer-line {
+  border: 1px solid #ffffff;
+}
+
+.footer-term-text {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: right;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+/* End Section 6 Style */
