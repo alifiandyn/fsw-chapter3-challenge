@@ -1,8 +1,6 @@
 /* Section 1 Style */
 .main-bg {
-  background: radial-gradient(189.96% 61.18% at 50% 38.82%, rgba(255, 181, 72, 0) 0%, rgba(52, 44, 29, 0.80319) 73.22%, #08090a 99.74%);
-  background-image: url("../../assets/main-bg.jpg");
-  /* background-color: red; */
+  background-image: radial-gradient(189.96% 61.18% at 50% 38.82%, rgba(255, 181, 72, 0) 0%, rgba(52, 44, 29, 0.80319) 73.22%, #08090a 99.74%), url("../../assets/main-bg.jpg");
   height: 960px;
   background-position: center;
   background-repeat: no-repeat;
@@ -72,19 +70,6 @@ nav {
   margin: 0 0 3rem 0;
 }
 
-.play-now-btn {
-  background: linear-gradient(194.68deg, #ffb548 11.27%, #f3af34 90.4%);
-  width: 260.36px;
-  height: 60px;
-  border-radius: 4px;
-  margin: 0 0 3rem 0;
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  color: #1a1917;
-}
-
 .link-story-games {
   text-decoration: none;
   color: white;
@@ -117,7 +102,7 @@ nav {
     margin: 0 0 3rem 0;
   }
 
-  .play-now-btn {
+  .default-btn {
     background: linear-gradient(194.68deg, #ffb548 11.27%, #f3af34 90.4%);
     width: 180.36px;
     height: 40px;
@@ -133,6 +118,7 @@ nav {
 /* End Section 1 Banner Style */
 /* End Section 1 Style */
 
+/* Global Custom Configuration */
 h3 {
   font-family: Arial;
   font-style: normal;
@@ -153,6 +139,40 @@ h1 {
   text-transform: uppercase;
   overflow: hidden;
 }
+
+.default-btn {
+  background: linear-gradient(194.68deg, #ffb548 11.27%, #f3af34 90.4%);
+  width: 260.36px;
+  height: 60px;
+  border-radius: 4px;
+  margin: 0 0 3rem 0;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  color: #1a1917;
+}
+
+.info-head {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 2px;
+  color: #ffb548;
+  text-transform: uppercase;
+}
+
+.info-text {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+}
+/* End Global Custom Configuration */
 
 /* Section 2 Style */
 .galery-bg {
@@ -224,16 +244,6 @@ ul.timeline > li:before {
   height: 20px;
   z-index: 400;
 }
-
-.timeline-info-head {
-  font-family: Arial;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 28px;
-  letter-spacing: 2px;
-  color: #ffb548;
-}
 /* End Section 3 Timeline Style */
 /* End Section 3 Style */
 
@@ -249,7 +259,7 @@ ul.timeline > li:before {
   color: white;
 }
 
-.system-requirment-bg h3 {
+.system-requirment-bg h4 {
   font-family: Arial;
   font-size: 14px;
   font-style: normal;
@@ -270,28 +280,56 @@ ul.timeline > li:before {
   margin: 3.125rem 0 2rem 0;
 }
 
-.requirment-info-head {
-  font-family: Arial;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 28px;
-  letter-spacing: 2px;
-  color: #ffb548;
-  text-transform: uppercase;
-}
-
-.requirment-info-text {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 22px;
-  color: #ffffff;
-}
-
 .table-custom td {
   padding: 1.25rem;
   height: 8.125rem;
 }
 /*End Section 4 Style */
+
+/* Section 5 style */
+.top-score-bg {
+  background-image: radial-gradient(70.52% 37.27% at 24.21% 47.47%, rgba(35, 15, 15, 0) 0%, rgba(0, 0, 0, 0) 51.1%, #080a0b 99.74%), url("../../assets/top-score-fix.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: 960px;
+  color: white;
+  overflow: hidden;
+}
+
+.top-score-bg .card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  width: 28rem;
+  min-height: 12.5rem;
+}
+
+.top-score-bg .img-profile {
+  width: 100%;
+  box-shadow: 2px 2px #ffb548;
+}
+
+.top-score-bg .top-score-name {
+  color: #ffb548;
+}
+
+.top-score-bg .player-status {
+  text-align: justify;
+  opacity: 0.5;
+}
+
+.top-score-bg .player-comment {
+  line-height: 25px;
+}
+
+.top-score-bg .player-comment-date {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
