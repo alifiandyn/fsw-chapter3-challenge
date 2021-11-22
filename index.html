@@ -8,7 +8,7 @@
 
     <!-- Bootstrap CSS and JS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-    <script src="dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="dist/js/bootstrap.bundle.min.js"></script> Button Collapse Navbar cannot work if this link active -->
 
     <!-- Custom CSS by Alif -->
     <link rel="stylesheet" href="dist/css/custom-style.css" />
@@ -19,17 +19,17 @@
     <title>Traditional Games</title>
   </head>
   <body>
-    <section class="main-bg">
+    <section class="main-bg" id="main-bg">
       <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-          <a class="navbar-brand col-2 nav-font-style" href="#">LOGO</a>
+          <a class="navbar-brand col-2 nav-font-style" href="#main-bg">LOGO</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse col-auto navbar-collapse" id="navbarNav">
             <ul class="navbar-nav me-auto my-2 my-lg-0 mb-0">
               <li class="nav-item">
-                <a class="nav-link nav-link-style" aria-current="page" href="#">HOME</a>
+                <a class="nav-link nav-link-style" aria-current="page" href="#main-bg">HOME</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link nav-link-style" href="#">WORK</a>
@@ -280,19 +280,19 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4 offset-md-1 text-center">
-            <img src="assets/subscribe-img.png" alt="" />
+            <img class="img-fluid" src="assets/subscribe-img.png" alt="" />
           </div>
           <div class="col-md-5">
             <h3>Want to stay in <br />touch?</h3>
             <h1 class="mt-4 mb-4">newsletter SUBSCRIBE</h1>
             <p class="info-text">In order to start receiving our news, all you have to do is enter your email address. Everything else will be taken care of by us. We will send you emails containing information about game. We don’t spam.</p>
-            <form class="row m-0">
+            <form class="row m-0 table-responsive">
               <div class="col-8 form-floating p-0">
                 <input type="text" class="form-control input-email-custom" id="email" placeholder="Enter email" name="email" value="youremail@binar.co,id" />
                 <label for="email" class="text-muted">Your email address</label>
               </div>
               <div class="col-4">
-                <button type="submit" class="default-btn">Confirm identity</button>
+                <button type="submit" class="default-btn w-100">Confirm identity</button>
               </div>
             </form>
           </div>
@@ -300,15 +300,50 @@
       </div>
     </section>
 
-    <footer class="footer">
-      <div class="container">
-        <hr class="footer-line m-0" />
-        <div class="row pt-4">
-          <div class="col-md-6">
-            <p class="info-muted m-0">© 2018 Your Games, Inc. All Rights Reserved</p>
-          </div>
-          <div class="col-md-6">
-            <p class="footer-term-text m-0">© 2018 Your Games, Inc. All Rights Reserved</p>
+    <footer>
+      <div class="list-social-media">
+        <div class="container">
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link nav-link-style" href="#">MAIN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-style" href="#">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-style" href="#">GAME FEATURES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-style" href="#">SYSTEM REQUIRMENT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-style" href="#">QUOTES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-style" href="#"><img src="/assets/facebook.svg" alt="facebook" /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-style" href="#"><img src="/assets/twitter.svg" alt="twitter" /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-style" href="#"><img src="/assets/Vector.svg" alt="youtube" /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-style" href="#"><img src="/assets/twitch.svg" alt="twitch" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-term">
+        <div class="container">
+          <hr class="footer-line m-0" />
+          <div class="row pt-4">
+            <div class="col-md-6">
+              <p class="info-muted m-0">© 2018 Your Games, Inc. All Rights Reserved</p>
+            </div>
+            <div class="col-md-6">
+              <p class="footer-term-text m-0">Privacy Policy | Terms of Services | Code of Conduct</p>
+            </div>
           </div>
         </div>
       </div>
